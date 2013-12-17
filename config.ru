@@ -1,6 +1,7 @@
 require 'bundler'
 Bundler.setup :default, (ENV['RACK_ENV'] || 'development')
  
+require 'sinatra'
 require 'sprockets'
 require 'compass'
 require 'sprockets-sass'
