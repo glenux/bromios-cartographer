@@ -1,7 +1,16 @@
+Bundler.require
 
+require 'sinatra/base'
+require 'sinatra/asset_pipeline'
+
+require 'compass'
+
+	
 class App < Sinatra::Base
+	register Sinatra::AssetPipeline
+
 	# Include these files when precompiling assets
-	set :assets_precompile, %w(app.js app.css *.png *.jpg *.svg *.eot *.ttf *.woff)
+	set :assets_precompile, %w(*.js *.css *.png *.jpg *.svg *.eot *.ttf *.woff)
 
 	# Logical paths to your assets
 	set :assets_prefix, %w(assets, vendor/assets)
@@ -19,8 +28,15 @@ class App < Sinatra::Base
 	# set :assets_js_compressor, :uglifier
 
 	# Register the AssetPipeline extention, make sure this goes after all customization
-	register Sinatra::AssetPipeline
-
+	configure do
+		Compass.configuration do |compass|
+			compass.http_path = "/"
+			compass.css_dir = "stylesheets"
+			compass.sass_dir = "sass"
+			compass.images_dir = "images"
+			compass.javascripts_dir = "javascripts"
+		end
+	end
 
 	get '/app' do
 		'Totooooo'

@@ -3,3 +3,4 @@
 /.sass-cache
 /vendor
 /Gemfile.lock
+/public/assets

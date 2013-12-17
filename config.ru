@@ -2,7 +2,7 @@
 require 'bundler'
 Bundler.setup :default, (ENV['RACK_ENV'] || 'development')
  
-require 'sinatra'
+require 'sinatra/base'
 require 'sinatra/asset_pipeline'
 
 #require 'sprockets'

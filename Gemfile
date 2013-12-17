@@ -9,7 +9,7 @@ group :app do
 	gem 'json'
 	gem 'sass'
 	gem 'compass'
-#	gem 'sprocket-helpers'
+	gem 'sprockets-helpers'
 	gem 'sinatra-asset-pipeline'
 end
 
