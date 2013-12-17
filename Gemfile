@@ -10,6 +10,7 @@ group :app do
 	gem 'sass'
 	gem 'compass'
 #	gem 'sprocket-helpers'
+	gem 'sinatra-asset-pipeline'
 end
 
 group :rackup do
@@ -26,6 +27,7 @@ end
 
 group :develop do
 	gem 'html2haml', require: false
+	gem 'shotgun', require: false
 end
 
 #gem 'coffee-script'
