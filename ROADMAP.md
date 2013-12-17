@@ -4,7 +4,7 @@ Roadmap
 Features (to implement)
 -----------------------
 
-* Add center
+* Add center 
 * Select node by clic
 * Select node with keyboard navigation
 * Add child node to selection
@@ -15,7 +15,18 @@ Features (to implement)
 * Export to JSON
 * Import to JSON
 
-Third party
------------
+
+Object Placement
+----------------
+
+* Add new items under mouse at first
+* Add move support with drap-and-drop 
+* Add automatic placement of node tree
+
+
+Third party libraries
+---------------------
+
 * Add key.js support
 * Add ember.js support
+
