@@ -27,6 +27,6 @@ Object Placement
 Third party libraries
 ---------------------
 
-* Add key.js support
+* Add key.js support - done
 * Add ember.js support
 
