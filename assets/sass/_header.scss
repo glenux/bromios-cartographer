@@ -1,0 +1,47 @@
+
+@import "constants.scss";
+@import "compass/utilities";
+
+#nav {
+    border-bottom: 1px solid #ccc;
+    background-color: #537;
+
+    h1 {
+		font-size: 20px;
+		font-weight: bold;
+		color: white;
+		margin: 0;
+		padding: 10px;
+
+		a {
+	    	color: inherit;
+	    	text-decoration: inherit;
+		}
+    }
+}
+
+#menu {
+	@include clearfix;
+	list-style-type: none;
+	border-bottom: 1px solid #ccc;
+	box-shadow: 0px 0px 4px rgba(black,0.5);
+
+	li { 
+		display: block;
+ 	   	float: left;
+	   	padding: 5px;
+
+		a {
+			display: block;
+			background-color: $color3;
+			border-radius: 10px;
+			padding: 5px 10px;
+			cursor: pointer;
+
+			&:hover {
+				background-color: $color2;
+				color: white;
+			}
+		}
+	}
+}
