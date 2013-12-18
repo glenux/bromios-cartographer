@@ -29,4 +29,4 @@ Third party libraries
 
 * Add key.js support - done
 * Add ember.js support
-
+* Add support for websockets in sinatra / https://github.com/simulacre/sinatra-websocket
